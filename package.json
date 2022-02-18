@@ -2,9 +2,12 @@
   "name": "tutproject",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://jyliao369.github.io/TodoAppVue",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
